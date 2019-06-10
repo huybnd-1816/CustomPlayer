@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		041DC31B22AEA1F000B6A515 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041DC31A22AEA1F000B6A515 /* AppDelegate.swift */; };
+		041DC31D22AEA1F000B6A515 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041DC31C22AEA1F000B6A515 /* MainViewController.swift */; };
+		041DC32022AEA1F000B6A515 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041DC31E22AEA1F000B6A515 /* Main.storyboard */; };
+		041DC32222AEA1F100B6A515 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041DC32122AEA1F100B6A515 /* Assets.xcassets */; };
+		041DC32522AEA1F100B6A515 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041DC32322AEA1F100B6A515 /* LaunchScreen.storyboard */; };
+		041DC33B22AEAA2B00B6A515 /* Perfect - Ed Sheeran.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 041DC33722AEAA2B00B6A515 /* Perfect - Ed Sheeran.mp3 */; };
+		041DC33F22AEAA7B00B6A515 /* Attention - Charlie Puth.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 041DC33C22AEAA7B00B6A515 /* Attention - Charlie Puth.mp3 */; };
+		041DC34022AEAA7B00B6A515 /* Shape Of You - Ed Sheeran.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 041DC33D22AEAA7B00B6A515 /* Shape Of You - Ed Sheeran.mp3 */; };
+		041DC34122AEAA7B00B6A515 /* Havana - Camila Cabello, Young Thug.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 041DC33E22AEAA7B00B6A515 /* Havana - Camila Cabello, Young Thug.mp3 */; };
+		041DC34422AEB3E900B6A515 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041DC34322AEB3E900B6A515 /* DetailViewController.swift */; };
+		041DC34722B613C400B6A515 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041DC34622B613C400B6A515 /* MainViewModel.swift */; };
+		041DC34A22B6140900B6A515 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041DC34922B6140900B6A515 /* BaseViewModel.swift */; };
+		041DC34C22B69B4C00B6A515 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041DC34B22B69B4C00B6A515 /* AudioManager.swift */; };
+		041DC35322B9462200B6A515 /* MPVolumeView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041DC35222B9462200B6A515 /* MPVolumeView+.swift */; };
+		042EE86622BE0716002BCBEA /* AvatarSongImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042EE86522BE0716002BCBEA /* AvatarSongImage.swift */; };
+		042EE86822BE7F52002BCBEA /* TimeCountDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042EE86722BE7F52002BCBEA /* TimeCountDown.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		041DC31722AEA1F000B6A515 /* CustomPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		041DC31A22AEA1F000B6A515 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		041DC31C22AEA1F000B6A515 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		041DC31F22AEA1F000B6A515 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		041DC32122AEA1F100B6A515 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		041DC32422AEA1F100B6A515 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		041DC32622AEA1F100B6A515 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		041DC33722AEAA2B00B6A515 /* Perfect - Ed Sheeran.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Perfect - Ed Sheeran.mp3"; sourceTree = "<group>"; };
+		041DC33C22AEAA7B00B6A515 /* Attention - Charlie Puth.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Attention - Charlie Puth.mp3"; sourceTree = "<group>"; };
+		041DC33D22AEAA7B00B6A515 /* Shape Of You - Ed Sheeran.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Shape Of You - Ed Sheeran.mp3"; sourceTree = "<group>"; };
+		041DC33E22AEAA7B00B6A515 /* Havana - Camila Cabello, Young Thug.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Havana - Camila Cabello, Young Thug.mp3"; sourceTree = "<group>"; };
+		041DC34322AEB3E900B6A515 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		041DC34622B613C400B6A515 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		041DC34922B6140900B6A515 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		041DC34B22B69B4C00B6A515 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		041DC35222B9462200B6A515 /* MPVolumeView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MPVolumeView+.swift"; sourceTree = "<group>"; };
+		042EE86522BE0716002BCBEA /* AvatarSongImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarSongImage.swift; sourceTree = "<group>"; };
+		042EE86722BE7F52002BCBEA /* TimeCountDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCountDown.swift; sourceTree = "<group>"; };
+		04CBF4022364201E0000440C /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		041DC31422AEA1F000B6A515 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		041DC30E22AEA1F000B6A515 = {
+			isa = PBXGroup;
+			children = (
+				04CBF4022364201E0000440C /* Bridging-Header.h */,
+				041DC31922AEA1F000B6A515 /* CustomPlayer */,
+				041DC33322AEA9C400B6A515 /* Songs */,
+				041DC31822AEA1F000B6A515 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		041DC31822AEA1F000B6A515 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				041DC31722AEA1F000B6A515 /* CustomPlayer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		041DC31922AEA1F000B6A515 /* CustomPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				041DC32C22AEA20F00B6A515 /* App */,
+				041DC35022B9460300B6A515 /* Extensions */,
+				041DC32F22AEA22100B6A515 /* Helper */,
+				041DC32E22AEA21B00B6A515 /* Data */,
+				041DC32D22AEA21400B6A515 /* Scenes */,
+				041DC32122AEA1F100B6A515 /* Assets.xcassets */,
+				041DC32322AEA1F100B6A515 /* LaunchScreen.storyboard */,
+				041DC32622AEA1F100B6A515 /* Info.plist */,
+			);
+			path = CustomPlayer;
+			sourceTree = "<group>";
+		};
+		041DC32C22AEA20F00B6A515 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				041DC31A22AEA1F000B6A515 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		041DC32D22AEA21400B6A515 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				041DC34822B613F300B6A515 /* Base */,
+				041DC34222AEB3D000B6A515 /* Detail */,
+				041DC33222AEA24100B6A515 /* Main */,
+				041DC33122AEA23500B6A515 /* Storyboards */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		041DC32E22AEA21B00B6A515 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				041DC33022AEA22E00B6A515 /* Model */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		041DC32F22AEA22100B6A515 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				041DC34B22B69B4C00B6A515 /* AudioManager.swift */,
+				042EE86722BE7F52002BCBEA /* TimeCountDown.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		041DC33022AEA22E00B6A515 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		041DC33122AEA23500B6A515 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				041DC31E22AEA1F000B6A515 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		041DC33222AEA24100B6A515 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				041DC34522B613B000B6A515 /* ViewModel */,
+				041DC31C22AEA1F000B6A515 /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		041DC33322AEA9C400B6A515 /* Songs */ = {
+			isa = PBXGroup;
+			children = (
+				041DC33C22AEAA7B00B6A515 /* Attention - Charlie Puth.mp3 */,
+				041DC33E22AEAA7B00B6A515 /* Havana - Camila Cabello, Young Thug.mp3 */,
+				041DC33D22AEAA7B00B6A515 /* Shape Of You - Ed Sheeran.mp3 */,
+				041DC33722AEAA2B00B6A515 /* Perfect - Ed Sheeran.mp3 */,
+			);
+			path = Songs;
+			sourceTree = "<group>";
+		};
+		041DC34222AEB3D000B6A515 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				041DC34322AEB3E900B6A515 /* DetailViewController.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		041DC34522B613B000B6A515 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				041DC34622B613C400B6A515 /* MainViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		041DC34822B613F300B6A515 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				041DC34922B6140900B6A515 /* BaseViewModel.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		041DC35022B9460300B6A515 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				042EE86422BE0706002BCBEA /* UI */,
+				041DC35122B9460F00B6A515 /* Volume */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		041DC35122B9460F00B6A515 /* Volume */ = {
+			isa = PBXGroup;
+			children = (
+				041DC35222B9462200B6A515 /* MPVolumeView+.swift */,
+			);
+			path = Volume;
+			sourceTree = "<group>";
+		};
+		042EE86422BE0706002BCBEA /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				042EE86522BE0716002BCBEA /* AvatarSongImage.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		041DC31622AEA1F000B6A515 /* CustomPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 041DC32922AEA1F100B6A515 /* Build configuration list for PBXNativeTarget "CustomPlayer" */;
+			buildPhases = (
+				041DC31322AEA1F000B6A515 /* Sources */,
+				041DC31422AEA1F000B6A515 /* Frameworks */,
+				041DC31522AEA1F000B6A515 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CustomPlayer;
+			productName = CustomPlayer;
+			productReference = 041DC31722AEA1F000B6A515 /* CustomPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		041DC30F22AEA1F000B6A515 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = sunasterisk;
+				TargetAttributes = {
+					041DC31622AEA1F000B6A515 = {
+						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 041DC31222AEA1F000B6A515 /* Build configuration list for PBXProject "CustomPlayer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 041DC30E22AEA1F000B6A515;
+			productRefGroup = 041DC31822AEA1F000B6A515 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				041DC31622AEA1F000B6A515 /* CustomPlayer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		041DC31522AEA1F000B6A515 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				041DC34022AEAA7B00B6A515 /* Shape Of You - Ed Sheeran.mp3 in Resources */,
+				041DC32522AEA1F100B6A515 /* LaunchScreen.storyboard in Resources */,
+				041DC33F22AEAA7B00B6A515 /* Attention - Charlie Puth.mp3 in Resources */,
+				041DC32222AEA1F100B6A515 /* Assets.xcassets in Resources */,
+				041DC32022AEA1F000B6A515 /* Main.storyboard in Resources */,
+				041DC34122AEAA7B00B6A515 /* Havana - Camila Cabello, Young Thug.mp3 in Resources */,
+				041DC33B22AEAA2B00B6A515 /* Perfect - Ed Sheeran.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		041DC31322AEA1F000B6A515 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				042EE86622BE0716002BCBEA /* AvatarSongImage.swift in Sources */,
+				041DC34C22B69B4C00B6A515 /* AudioManager.swift in Sources */,
+				041DC35322B9462200B6A515 /* MPVolumeView+.swift in Sources */,
+				041DC34422AEB3E900B6A515 /* DetailViewController.swift in Sources */,
+				041DC34A22B6140900B6A515 /* BaseViewModel.swift in Sources */,
+				041DC31D22AEA1F000B6A515 /* MainViewController.swift in Sources */,
+				041DC31B22AEA1F000B6A515 /* AppDelegate.swift in Sources */,
+				042EE86822BE7F52002BCBEA /* TimeCountDown.swift in Sources */,
+				041DC34722B613C400B6A515 /* MainViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		041DC31E22AEA1F000B6A515 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				041DC31F22AEA1F000B6A515 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		041DC32322AEA1F100B6A515 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				041DC32422AEA1F100B6A515 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		041DC32722AEA1F100B6A515 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		041DC32822AEA1F100B6A515 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		041DC32A22AEA1F100B6A515 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2FVQE295NZ;
+				INFOPLIST_FILE = CustomPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunasterisk.CustomPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		041DC32B22AEA1F100B6A515 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2FVQE295NZ;
+				INFOPLIST_FILE = CustomPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunasterisk.CustomPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		041DC31222AEA1F000B6A515 /* Build configuration list for PBXProject "CustomPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				041DC32722AEA1F100B6A515 /* Debug */,
+				041DC32822AEA1F100B6A515 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		041DC32922AEA1F100B6A515 /* Build configuration list for PBXNativeTarget "CustomPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				041DC32A22AEA1F100B6A515 /* Debug */,
+				041DC32B22AEA1F100B6A515 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 041DC30F22AEA1F000B6A515 /* Project object */;
+}
